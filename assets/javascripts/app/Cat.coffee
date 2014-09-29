@@ -2,12 +2,12 @@ define ['phaser','jquery'], (Phaser, $)->
   class Cat extends  Phaser.Sprite
 
     @catTypes:
-      Default : 'dk.png'
-      First: 'dk.png'#'catSheet_1.png'
-      Second: 'dk.png'#'catSheet_2.png'
-      Third: 'dk.png'#'catSheet_3.png'
-      Four: 'dk.png'#'catSheet_4.png'
-      Five: 'dk.png'#'catSheet_5.png'
+      Default : 'catSheet_SB.png'
+      First: 'catSheet_1.png'
+      Second: 'catSheet_2.png'
+      Third: 'catSheet_3.png'
+      Four: 'catSheet_4.png'
+      Five: 'catSheet_5.png'
 
 
     @getRandomCatType: ()->
@@ -40,8 +40,8 @@ define ['phaser','jquery'], (Phaser, $)->
       this.anchor.setTo(0.5,0.5)
       this.scale.setTo(0.5,0.5)
       #Animations
-      this.animations.add("runRight",[0,4,5]);
-      this.animations.add("runLeft",[0,1,2]);
+      this.animations.add("runRight",[0,1,2,3,4,5]);
+      this.animations.add("runLeft",[6,7,8,9,10,11]);
       this.animations.add("hideEar",[0,12,0]);
       this.animations.add("smile",[0,13,0]);
       this.animations.add("look",[0,14,0]);
@@ -130,12 +130,11 @@ define ['phaser','jquery'], (Phaser, $)->
         self = @
         if this.randomAnimationLoop == undefined
           this.randomAnimationLoop = game.time.events.loop(Phaser.Timer.SECOND * 5 , ()->
-            console.log("HideEar");
-            #this.animations.play('hideEar',this.settings.animationFrameRate)
-            #this.animations.play('smile',this.settings.animationFrameRate / 2)
+            console.log("HideEar")
+            this.animations.play('hideEar',this.settings.animationFrameRate)
+            this.animations.play('smile',this.settings.animationFrameRate / 2)
             window.setTimeout(()->
-             console.log('')
-             #self.animations.play('look',1)
+              self.animations.play('look',1)
             ,2000)
           , this);
         else

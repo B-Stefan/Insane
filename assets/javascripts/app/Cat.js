@@ -10,12 +10,12 @@
       __extends(Cat, _super);
 
       Cat.catTypes = {
-        Default: 'dk.png',
-        First: 'dk.png',
-        Second: 'dk.png',
-        Third: 'dk.png',
-        Four: 'dk.png',
-        Five: 'dk.png'
+        Default: 'catSheet_SB.png',
+        First: 'catSheet_1.png',
+        Second: 'catSheet_2.png',
+        Third: 'catSheet_3.png',
+        Four: 'catSheet_4.png',
+        Five: 'catSheet_5.png'
       };
 
       Cat.getRandomCatType = function() {
@@ -68,8 +68,8 @@
         this.settings = Phaser.Utils.mixin(settings, Phaser.Utils.extend(Cat.defaultSettings));
         this.anchor.setTo(0.5, 0.5);
         this.scale.setTo(0.5, 0.5);
-        this.animations.add("runRight", [0, 4, 5]);
-        this.animations.add("runLeft", [0, 1, 2]);
+        this.animations.add("runRight", [0, 1, 2, 3, 4, 5]);
+        this.animations.add("runLeft", [6, 7, 8, 9, 10, 11]);
         this.animations.add("hideEar", [0, 12, 0]);
         this.animations.add("smile", [0, 13, 0]);
         this.animations.add("look", [0, 14, 0]);
@@ -179,8 +179,10 @@
         if (this.randomAnimationLoop === void 0) {
           return this.randomAnimationLoop = game.time.events.loop(Phaser.Timer.SECOND * 5, function() {
             console.log("HideEar");
+            this.animations.play('hideEar', this.settings.animationFrameRate);
+            this.animations.play('smile', this.settings.animationFrameRate / 2);
             return window.setTimeout(function() {
-              return console.log('');
+              return self.animations.play('look', 1);
             }, 2000);
           }, this);
         } else {
