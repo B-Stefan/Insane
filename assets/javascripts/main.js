@@ -3,7 +3,7 @@ requirejs.config(
     {
         paths: {
             'phaser': './vendor/phaser',
-            'jquery': './vendor/JQuery',
+            'jquery': './vendor/jQuery',
             '_': './vendor/underscore/underscore'
         },
         shim: {
