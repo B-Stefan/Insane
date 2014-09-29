@@ -39,7 +39,7 @@ define(['phaser', 'jquery','./Game', './Cat'], function(phaser, $ , Game,Cat){
         Cat.preload(game);
         game.load.image('bg',game.normalizeUrl(game.defaults.images+'bg2.png'));
         game.load.image('spits', game.normalizeUrl(game.defaults.images+ "spits" +'.png')); // loading the tileset image
-        game.load.image('fire', game.normalizeUrl(game.defaults.images+ 'fire.png')); // loading the tileset image
+        game.load.image('fire', game.normalizeUrl(game.defaults.images+ 'fire.PNG')); // loading the tileset image
         game.load.image('fire1', game.normalizeUrl(game.defaults.images+ 'Fire.gif')); // loading the tileset image
         //game.load.image('tiles', game.normalizeUrl(game.defaults.images+ 'tiles.png')); // loading the tileset image
         game.load.image('ForrestSprites', game.normalizeUrl(game.defaults.images+ 'ForestSprites.png')); // loading the tileset image
