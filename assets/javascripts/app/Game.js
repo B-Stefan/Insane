@@ -1,4 +1,4 @@
-define(['phaser', 'jquery', './Level', 'shakeSrceen'], function(phaser, $, Level, unused){
+define(['phaser', 'jquery', './Level'], function(phaser, $, Level){
 
     /**
      * Klasse für ein Spiel
