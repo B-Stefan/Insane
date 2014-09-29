@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/assets/javascripts/app/CatManager.js" />
+        <item url="file://$PROJECT_DIR$/assets/javascripts/app/Cat.js" />
+        <item url="file://$PROJECT_DIR$/assets/javascripts/app/Personality.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/assets/javascripts/app/personality/Personality.js" />
+      <root url="file://$PROJECT_DIR$/assets/javascripts/app/Player.js" />
+      <root url="file://$PROJECT_DIR$/assets/javascripts/app/personality/Personality.js" />
+      <root url="file://$PROJECT_DIR$/assets/javascripts/app/CatManager.js" />
+      <root url="file://$PROJECT_DIR$/assets/javascripts/app/Player.js" />
+      <root url="file://$PROJECT_DIR$/assets/javascripts/app/CatManager.js" />
+      <root url="file://$PROJECT_DIR$/assets/javascripts/app/Cat.js" />
+      <root url="file://$PROJECT_DIR$/assets/javascripts/app/Personality.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
