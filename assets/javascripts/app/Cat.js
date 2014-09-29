@@ -200,5 +200,3 @@
   });
 
 }).call(this);
-
-//# sourceMappingURL=Cat.js.map
