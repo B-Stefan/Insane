@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98dc1aba-c390-4d46-8630-ab71cabea4da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/javascripts/shakeSrceen.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascripts/app/Game.js" afterPath="$PROJECT_DIR$/assets/javascripts/app/Game.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Insane.iws" />
@@ -378,7 +376,11 @@
       <created>1412001072346</created>
       <updated>1412001072346</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="- Remove shakeScreen Plugin">
+      <created>1412001145924</created>
+      <updated>1412001145924</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -448,7 +450,8 @@
     <MESSAGE value="- Change roation timeing" />
     <MESSAGE value="- Add Screenshots" />
     <MESSAGE value="- Remove unused files &#10;- Remove *.coffe maps" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Remove unused files &#10;- Remove *.coffe maps" />
+    <MESSAGE value="- Remove shakeScreen Plugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Remove shakeScreen Plugin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
